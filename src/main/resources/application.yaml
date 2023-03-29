@@ -1,1 +1,3 @@
-
+server:
+  servlet.context-path: /jsonifier
+  port: 8080
