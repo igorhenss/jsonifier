@@ -13,12 +13,4 @@ public class TranslationRequest {
     private Map<String, String> mappings;
     private JsonNode content;
 
-    public String getContentValueFromKey(String key) {
-        JsonNode gotten = content.get(key);
-        if (!gotten.isNull()) {
-            return gotten.toPrettyString();
-        }
-        throw new RuntimeException();
-    }
-
 }
