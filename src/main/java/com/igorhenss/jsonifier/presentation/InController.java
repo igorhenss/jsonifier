@@ -4,11 +4,13 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.igorhenss.jsonifier.dto.TranslationRequest;
 import com.igorhenss.jsonifier.service.Translator;
 import lombok.AllArgsConstructor;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@CrossOrigin("*")
 @AllArgsConstructor
 public class InController {
 
